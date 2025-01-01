@@ -1,7 +1,95 @@
+:root {
+  --base-color: #f8f8f8;
+  --base-variant: #f4f4f4;
+  --base-variant-2: #e7e7e7;
+  --text-color: #252525;
+  --secondary-text: #000000;
+  --gray-1: #efefef;
+  --gray-2: #cacaca;
+  --gray-3: #afafaf;
+  --description: #000000;
+  --accent-color: #916cff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-  background-color: black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--base-color);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 p {
-  color:aliceblue;
+text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+nav {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px var(--gray-3);
+}
+
+.nav-left {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 16px;
+}
+
+.logo-name {
+  font-family: 'Staatliches', sans-serif;
 }
