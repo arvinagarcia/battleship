@@ -12,11 +12,11 @@ module.exports = {
   },
   devtool: 'eval-source-map',
   devServer: {
-    watchFiles: ['./src/index.html'],
+    watchFiles: ['./public/index.html'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
