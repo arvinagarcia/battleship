@@ -16,7 +16,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      filename: 'index.html',
+      template: 'public/index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'controls.html',
+      template: 'public/controls.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: 'public/about.html',
+      chunks: ['main']
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
