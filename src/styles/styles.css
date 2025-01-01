@@ -72,6 +72,10 @@ h6 {
   isolation: isolate;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   padding: 16px;
   display: flex;
@@ -82,14 +86,97 @@ nav {
 
 .nav-left {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-middle a {
+  padding: 4px 12px;
+  color: var(--text-color);
+  font-size: 14px;
+  border-radius: 8px;
+  transition: font-weight 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.nav-middle a:hover {
+  font-weight: 600;
+  background-color: var(--text-color);
+  color: var(--base-color);
 }
 
 .nav-right {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
 }
 
 .logo-name {
   font-family: 'Staatliches', sans-serif;
+}
+
+.theme-toggle,
+.github-btn {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+.github-btn svg {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.theme-toggle svg:last-child {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .logo-name {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-name {
+    display: block;
+  }
+
+  .nav-middle {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-name {
+    display: block;
+  }
+
+  .nav-middle {
+    display: none;
+  }
 }
