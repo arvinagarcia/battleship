@@ -227,7 +227,6 @@ main {
 .opponent-container .bottom {
   display: flex;
   gap: 16px;
-  height: 100px;
 }
 
 .yard-name {
@@ -268,6 +267,27 @@ main {
 
 .ship-5 {
   width: 80px;
+}
+
+@media (max-width: 900px) {
+  .your-container,
+  .opponent-container {
+    width: 300px;
+  }
+
+  .your-container .middle,
+  .opponent-container .middle {
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 560px) {
@@ -386,5 +406,15 @@ main {
 
   .nav-middle {
     display: none;
+  }
+
+  .your-container,
+  .opponent-container {
+    width: 260px;
+  }
+
+  .your-container .middle,
+  .opponent-container .middle {
+    height: 260px;
   }
 }
