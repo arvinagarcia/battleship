@@ -8,7 +8,7 @@
   --gray-2: #cacaca;
   --gray-3: #afafaf;
   --description: #000000;
-  --accent-color: #916cff;
+  --accent-color: #e83552;
 }
 
 *,
@@ -185,6 +185,89 @@ nav {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1000;
+}
+
+main {
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.your-container,
+.opponent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  /* height: 500px; */
+}
+
+.your-container .top,
+.opponent-container .top {
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--base-color);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.your-container .middle,
+.opponent-container .middle {
+  background-color: var(--gray-1);
+  height: 400px;
+  border-radius: 10px;
+}
+
+.your-container .bottom,
+.opponent-container .bottom {
+  display: flex;
+  gap: 16px;
+  height: 100px;
+}
+
+.yard-name {
+  writing-mode: sideways-lr;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.your-container .yard,
+.opponent-container .yard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;  
+  width: 100%;
+}
+
+.ship {
+  height: 32px;
+  background-color: var(--gray-1);
+  border-radius: 10px;
+}
+
+.ship-1 {
+  width: 120px;
+}
+
+.ship-2,
+.ship-3 {
+  width: 100px;
+}
+
+.ship-4 {
+  width: 160px;
+}
+
+.ship-5 {
+  width: 80px;
 }
 
 @media (max-width: 560px) {
