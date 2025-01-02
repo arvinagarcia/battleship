@@ -13,7 +13,7 @@ export function initializeNav() {
     </div>
     <div class="nav-middle">
       <a href="index.html">Home</a>
-      <a href="controls.html">Controls</a>
+      <a href="controls.html">How to Play</a>
       <a href="about.html">About</a>
     </div>
     <div class="nav-right">
