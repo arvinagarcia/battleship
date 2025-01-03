@@ -191,8 +191,48 @@ nav {
   padding: 16px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 64px;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-home-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prepare-description,
+.in-game-description {
+  font-size: 14px;
+  max-width: 800px;
+}
+
+.start-game-btn,
+.restart-game-btn {
+  margin-top: 12px;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  color: var(--base-color);
+  font-size: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.start-game-btn:hover,
+.restart-game-btn:hover {
+  opacity: 0.8;
+}
+
+.main-home-bottom {
+  display: flex;
+  gap: 60px;
 }
 
 .your-container,

@@ -57,7 +57,7 @@ export function initializeSidebar() {
 
   // close sidebar on overlay or close button click
   overlay.addEventListener("click", closeSidebar);
-  document.getElementById("close-sidebar").addEventListener("click", closeSidebar);
+  document.querySelector(".close-btn").addEventListener("click", closeSidebar);
 
   function closeSidebar() {
     sidebar.style.left = "-300px";
