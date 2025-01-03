@@ -201,7 +201,6 @@ nav {
   flex-direction: column;
   gap: 16px;
   width: 400px;
-  /* height: 500px; */
 }
 
 .your-container .top,
@@ -269,7 +268,8 @@ nav {
   width: 80px;
 }
 
-.main-controls {
+.main-controls,
+.main-about {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -278,8 +278,12 @@ nav {
 
 .placement-container,
 .gameplay-container,
-.controls-container {
-  padding: 20px;
+.controls-container,
+.about-container, 
+.why-container, 
+.mission-container, 
+.vision-container {
+  padding: 20px 20px 10px 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -288,19 +292,28 @@ nav {
 
 .placement-description,
 .gameplay-description,
-.controls-description {
+.controls-description, 
+.about-container .description,
+.why-container .description,
+.mission-container .description,
+.vision-container .description {
   font-size: 14px;
 }
 
 .placement-top,
 .gameplay-top,
-.controls-top {
+.controls-top,
+.about-container .top, 
+.why-container .top, 
+.mission-container .top, 
+.vision-container .top {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.how-to-play-icons {
+.how-to-play-icons,
+.about-icons {
   width: 26px;
   height: 26px;
 }
