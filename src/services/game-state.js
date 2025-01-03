@@ -1,6 +1,10 @@
 export const initializeGameState = () => {
   const mainHomeTop = document.querySelector(".main-home-top");
 
+  if (!mainHomeTop) {
+    return;
+  }
+  
   // function to replace content with "Prepare Your Fleet"
   const updateToPrepareScreen = () => {
     mainHomeTop.innerHTML = `
